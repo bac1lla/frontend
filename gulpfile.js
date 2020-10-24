@@ -23,7 +23,7 @@ function toCssMin() {
   return src("./**/*.css")
     .pipe(cssmin())
     .pipe(rename({ suffix: ".min" }))
-    .pipe(dest("./dist"));
+    .pipe(dest("./"));
 }
 
 //sass
